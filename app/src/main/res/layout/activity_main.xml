@@ -18,7 +18,7 @@
         android:fontFamily="sans-serif"
         android:text="KantinKu"
         android:textColor="@color/hijau_utama"
-        android:textSize="48sp"
+        android:textSize="52sp"
         android:textStyle="bold" />
 
     <TextView
@@ -49,6 +49,30 @@
         android:textAlignment="center"
         android:textColor="@color/hitam" />
 
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:hint="Nama Siswa"
+        android:textColorHint="@color/hijau_utama"
+        android:textColor="@color/hitam"
+        android:background="@drawable/bg_border"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_border"
+        android:hint="Nomor Telepon"
+        android:inputType="phone"
+        android:textColor="@color/hitam"
+        android:textColorHint="@color/hijau_utama" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="250dp"
@@ -59,4 +83,5 @@
         android:text="Mulai Pesan"
         android:textColor="@color/putih"
         android:textSize="20sp" />
+
 </LinearLayout>
