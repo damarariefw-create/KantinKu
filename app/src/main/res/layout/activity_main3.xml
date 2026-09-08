@@ -28,14 +28,13 @@
         android:textSize="16sp" />
 
     <RadioGroup
-        android:id="@+id/radioMakanan"
-        android:layout_width="300dp"
+        android:id="@+id/radioMinuman"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp">
 
         <RadioButton
-            android:id="@+id/rbNasiGoreng"
+            android:id="@+id/rbEsTeh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -46,7 +45,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbMieAyam"
+            android:id="@+id/rbTeh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -56,7 +55,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbAyamGeprek"
+            android:id="@+id/rbEsLemonTea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -66,7 +65,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbBaksoMrecon"
+            android:id="@+id/rbEsJeruk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -76,7 +75,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbBaksoBiasa"
+            android:id="@+id/rbJerukHangat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -86,7 +85,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiLiwet"
+            android:id="@+id/rbPopIce"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -96,7 +95,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang"
+            android:id="@+id/rbEsNutrisari"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -106,7 +105,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang2"
+            android:id="@+id/rbKopiHitam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -116,7 +115,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang3"
+            android:id="@+id/rbEsKopiHitam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -126,7 +125,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang10"
+            android:id="@+id/rbJusBuah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -136,62 +135,12 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang13"
+            android:id="@+id/rbJusMix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
             android:buttonTintMode="multiply"
             android:text="Jus Mix - Rp6.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbNasiPadang7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Indomie Goreng - Rp6.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbNasiPadang8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Indomie Kuah - Rp6.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbNasiPadang9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Siomay - Rp5.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbNasiPadang10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Batagor - Rp5.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbNasiPadang11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Pempek - Rp5.000"
             android:textColor="@color/hijau_tua"
             android:textSize="20sp" />
 

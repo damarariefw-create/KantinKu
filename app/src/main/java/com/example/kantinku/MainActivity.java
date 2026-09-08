@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +15,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    // 1. Deklarasi variabel Button
+    // Kunci untuk mengirim data antar halaman
+    public static final String EXTRA_NAME = "nama";
+    public static final String EXTRA_PHONE = "no_telepon";
+
+    private EditText inputNama;
+    private EditText inputNoTelp;
     private Button btnMulaiPesan;
 
     @Override
@@ -28,14 +35,24 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // 2. Hubungkan variabel dengan ID Button di XML
+        inputNama = findViewById(R.id.name);
+        inputNoTelp = findViewById(R.id.phone);
         btnMulaiPesan = findViewById(R.id.button);
 
-        // 3. Tambahkan fungsi klik untuk berpindah halaman
         btnMulaiPesan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String nama = inputNama.getText().toString().trim();
+                String noTelp = inputNoTelp.getText().toString().trim();
+
+                if (nama.isEmpty() || noTelp.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Nama dan nomor telepon wajib diisi", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                intent.putExtra(EXTRA_NAME, nama);
+                intent.putExtra(EXTRA_PHONE, noTelp);
                 startActivity(intent);
             }
         });
