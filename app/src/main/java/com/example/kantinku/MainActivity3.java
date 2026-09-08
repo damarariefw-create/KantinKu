@@ -4,10 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.appcompat.R;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PilihMakananActivity extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
 
     Button btnLanjut;
 
@@ -15,15 +14,15 @@ public class PilihMakananActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_pilih_makanan);
+        setContentView(R.layout.activity_main3);
 
         btnLanjut = findViewById(R.id.btnLanjut);
 
         btnLanjut.setOnClickListener(v -> {
 
             Intent intent = new Intent(
-                    PilihMakananActivity.this,
-                    PilihMinumanActivity.class
+                    MainActivity3.this,
+                    MainActivity4.class
             );
 
             startActivity(intent);

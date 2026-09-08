@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="Silakan pilih makanan:"
-        android:textColor="@color/hitam" />
+        android:textColor="@color/hitam"
+        android:textSize="16sp" />
 
     <RadioGroup
         android:id="@+id/radioMakanan"
@@ -34,51 +35,72 @@
             android:id="@+id/rbNasiGoreng"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
             android:checked="true"
             android:text="Nasi Goreng - Rp15.000"
-            android:textColor="@color/hijau_utama" />
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbMieAyam"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
             android:text="Mie Ayam - Rp12.000"
-            android:textColor="@color/hijau_utama" />
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbAyamGeprek"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
             android:text="Ayam Geprek - Rp14.000"
-            android:textColor="@color/hijau_utama" />
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbBaksoMrecon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
             android:text="Bakso Mrecon - Rp15.000"
-            android:textColor="@color/hijau_utama" />
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbBaksoBiasa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
             android:text="Bakso Biasa - Rp10.000"
-            android:textColor="@color/hijau_utama" />
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbNasiLiwet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
             android:text="Nasi Liwet - Rp7.000"
-            android:textColor="@color/hijau_utama" />
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rbNasiPadang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
             android:text="Nasi Padang - Rp10.000"
-            android:textColor="@color/hijau_utama" />
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
 
     </RadioGroup>
 
@@ -89,6 +111,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/hijau_tua"
-        android:text="Lanjut" />
+        android:text="Lanjut"
+        android:textSize="20sp" />
 
 </LinearLayout>
