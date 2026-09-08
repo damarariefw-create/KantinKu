@@ -11,6 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:text="Pilih Makanan"
         android:textColor="@color/hijau_utama"
@@ -20,6 +21,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"
         android:text="Silakan pilih makanan:"
         android:textColor="@color/hitam"
@@ -27,8 +29,9 @@
 
     <RadioGroup
         android:id="@+id/radioMakanan"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp">
 
         <RadioButton
@@ -99,6 +102,56 @@
             android:buttonTint="@color/hijau_muda"
             android:buttonTintMode="multiply"
             android:text="Nasi Padang - Rp10.000"
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbNasiPadang7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
+            android:text="Indomie Goreng - Rp6.000"
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbNasiPadang8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
+            android:text="Indomie Kuah - Rp6.000"
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbNasiPadang9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
+            android:text="Siomay - Rp5.000"
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbNasiPadang10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
+            android:text="Batagor - Rp5.000"
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbNasiPadang11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
+            android:text="Pempek - Rp5.000"
             android:textColor="@color/hijau_tua"
             android:textSize="20sp" />
 
