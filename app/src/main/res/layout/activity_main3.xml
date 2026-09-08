@@ -1,10 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    android:layout_gravity="center_horizontal"
+    android:background="@color/hijau_background"
+    android:orientation="vertical"
+    android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Pilih Makanan"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Silakan pilih makanan:" />
+
+    <RadioGroup
+        android:id="@+id/radioMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/rbNasiGoreng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nasi Goreng - Rp15.000"
+            android:textColor="@color/hijau_utama" />
+
+        <RadioButton
+            android:id="@+id/rbMieAyam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Ayam - Rp12.000"
+            android:textColor="@color/hijau_utama" />
+
+        <RadioButton
+            android:id="@+id/rbAyamGeprek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ayam Geprek - Rp14.000"
+            android:textColor="@color/hijau_utama" />
+
+        <RadioButton
+            android:id="@+id/rbBaksoMrecon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakso Mrecon - Rp15.000"
+            android:textColor="@color/hijau_utama" />
+
+        <RadioButton
+            android:id="@+id/rbBaksoBiasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakso Biasa - Rp10.000"
+            android:textColor="@color/hijau_utama" />
+
+        <RadioButton
+            android:id="@+id/rbNasiLiwet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nasi Liwet - Rp7.000"
+            android:textColor="@color/hijau_utama" />
+
+        <RadioButton
+            android:id="@+id/rbNasiPadang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nasi Padang - Rp10.000"
+            android:textColor="@color/hijau_utama" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnLanjut"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/hijau_tua"
+        android:text="Lanjut" />
+
+</LinearLayout>
