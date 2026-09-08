@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import androidx.appcompat.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PilihMakananActivity extends AppCompatActivity {

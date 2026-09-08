@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         android:text="Pilih Makanan"
         android:textColor="@color/hijau_utama"
-        android:textSize="25sp"
+        android:textSize="34sp"
         android:textStyle="bold" />
 
     <TextView
