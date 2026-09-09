@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:background="@color/hijau_background"
-    android:orientation="vertical"
-    android:padding="20dp">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,7 +29,7 @@
 
     <RadioGroup
         android:id="@+id/radioMakanan"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp">
@@ -41,8 +40,8 @@
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
             android:buttonTintMode="multiply"
-            android:checked="true"
-            android:text="Nasi Goreng - Rp15.000"
+            android:checked="false"
+            android:text="Nasi Goreng - Rp10.000"
             android:textColor="@color/hijau_tua"
             android:textSize="20sp" />
 
@@ -67,22 +66,22 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbBaksoMrecon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Bakso Mrecon - Rp15.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
-
-        <RadioButton
             android:id="@+id/rbBaksoBiasa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
             android:buttonTintMode="multiply"
-            android:text="Bakso Biasa - Rp10.000"
+            android:text="Bakso - Rp10.000"
+            android:textColor="@color/hijau_tua"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbBaksoMercon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/hijau_muda"
+            android:buttonTintMode="multiply"
+            android:text="Bakso Mercon - Rp15.000"
             android:textColor="@color/hijau_tua"
             android:textSize="20sp" />
 
@@ -107,7 +106,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang7"
+            android:id="@+id/rbIndomieGoreng"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -117,7 +116,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang8"
+            android:id="@+id/rbIndomieKuah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -127,7 +126,7 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang9"
+            android:id="@+id/rbSiomay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
@@ -137,22 +136,12 @@
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/rbNasiPadang10"
+            android:id="@+id/rbBatagor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:buttonTint="@color/hijau_muda"
             android:buttonTintMode="multiply"
             android:text="Batagor - Rp5.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbNasiPadang11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Pempek - Rp5.000"
             android:textColor="@color/hijau_tua"
             android:textSize="20sp" />
 
@@ -163,11 +152,9 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/hijau_tua"
         android:text="Lanjut"
         android:textSize="20sp" />
 
 </LinearLayout>
-

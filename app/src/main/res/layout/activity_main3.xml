@@ -1,159 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-    android:background="@color/hijau_background"
-    android:orientation="vertical"
-    android:padding="20dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center_horizontal" android:background="@color/hijau_background" android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:text="Pilihan Minuman"
-        android:textColor="@color/hijau_utama"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="50dp" android:text="Pilihan Minuman" android:textColor="@color/hijau_utama" android:textSize="34sp" android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:text="Silakan pilih minuman:"
-        android:textColor="@color/hitam"
-        android:textSize="16sp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:text="Silakan pilih minuman:" android:textColor="@color/hitam" android:textSize="16sp" />
 
-    <RadioGroup
-        android:id="@+id/radioMinuman"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+    <RadioGroup android:id="@+id/radioMinuman" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp">
 
-        <RadioButton
-            android:id="@+id/rbEsTeh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:checked="true"
-            android:text="Es Teh - Rp3.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbEsTeh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:checked="false" android:text="Es Teh - Rp3.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbTeh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Teh - Rp3.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbTeh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Teh - Rp3.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbEsLemonTea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Es Lemon Tea - Rp4.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbEsLemonTea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Es Lemon Tea - Rp4.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbEsJeruk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Es Jeruk - Rp4.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbEsJeruk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Es Jeruk - Rp4.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbJerukHangat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Jeruk Hangat - Rp4.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbJerukHangat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Jeruk Hangat - Rp4.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbPopIce"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Pop Ice - Rp4.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbPopIce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Pop Ice - Rp4.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbEsNutrisari"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Es Nutrisari - Rp4.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbEsNutrisari" android:layout_width="wrap_content" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Es Nutrisari - Rp4.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbKopiHitam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Kopi Hitam - Rp4.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbKopiHitam" android:layout_width="match_parent" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Kopi Hitam - Rp4.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbEsKopiHitam"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Es Kopi Hitam - Rp5.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbEsKopiHitam" android:layout_width="match_parent" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Es Kopi Hitam - Rp5.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbJusBuah"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Jus Buah - Rp5.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbJusBuah" android:layout_width="match_parent" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Jus Buah - Rp5.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/rbJusMix"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:buttonTint="@color/hijau_muda"
-            android:buttonTintMode="multiply"
-            android:text="Jus Mix - Rp6.000"
-            android:textColor="@color/hijau_tua"
-            android:textSize="20sp" />
+        <RadioButton android:id="@+id/rbJusMix" android:layout_width="match_parent" android:layout_height="wrap_content" android:buttonTint="@color/hijau_muda" android:buttonTintMode="multiply" android:text="Jus Mix - Rp6.000" android:textColor="@color/hijau_tua" android:textSize="20sp" />
 
     </RadioGroup>
 
-    <Button
-        android:id="@+id/btnLanjut"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/hijau_tua"
-        android:text="Lanjut"
-        android:textSize="20sp" />
+    <Button android:id="@+id/btnLanjut" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="50dp" android:backgroundTint="@color/hijau_tua" android:text="Lanjut" android:textSize="20sp" />
 
 </LinearLayout>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +37,11 @@ public class MainActivity2 extends AppCompatActivity {
         btnLanjut = findViewById(R.id.btnLanjut);
 
         btnLanjut.setOnClickListener(v -> {
+            int checkedId = radioMakanan.getCheckedRadioButtonId();
+            if (checkedId == -1) {
+                Toast.makeText(MainActivity2.this, "Silakan pilih makanan terlebih dahulu", Toast.LENGTH_SHORT).show();
+                return;
+            }
             Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
             intent.putExtra(MainActivity.EXTRA_NAME, getIntent().getStringExtra(MainActivity.EXTRA_NAME));
             intent.putExtra(MainActivity.EXTRA_PHONE, getIntent().getStringExtra(MainActivity.EXTRA_PHONE));
@@ -48,15 +54,39 @@ public class MainActivity2 extends AppCompatActivity {
     // Ambil nama item yang dipilih dari teks RadioButton ("Nasi Goreng - Rp15.000")
     private String getSelectedName(RadioGroup group) {
         int checkedId = group.getCheckedRadioButtonId();
+        if (checkedId == -1) {
+            return "";
+        }
         RadioButton rb = findViewById(checkedId);
-        return rb.getText().toString().split(" - Rp")[0];
+        if (rb == null) {
+            return "";
+        }
+        String text = rb.getText().toString();
+        if (text.contains(" - Rp")) {
+            return text.split(" - Rp")[0];
+        }
+        return text;
     }
 
     // Ambil harga item yang dipilih ("Rp15.000" -> 15000)
     private int getSelectedPrice(RadioGroup group) {
         int checkedId = group.getCheckedRadioButtonId();
+        if (checkedId == -1) {
+            return 0;
+        }
         RadioButton rb = findViewById(checkedId);
-        String priceStr = rb.getText().toString().split(" - Rp")[1].replace(".", "");
-        return Integer.parseInt(priceStr);
+        if (rb == null) {
+            return 0;
+        }
+        String text = rb.getText().toString();
+        if (text.contains(" - Rp")) {
+            try {
+                String priceStr = text.split(" - Rp")[1].replace(".", "").trim();
+                return Integer.parseInt(priceStr);
+            } catch (Exception e) {
+                return 0;
+            }
+        }
+        return 0;
     }
 }

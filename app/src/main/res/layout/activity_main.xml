@@ -55,11 +55,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
-        android:hint="Nama Siswa"
-        android:textColorHint="@color/hijau_utama"
-        android:textColor="@color/hitam"
         android:background="@drawable/bg_border"
-        android:inputType="textPersonName" />
+        android:hint="Nama Siswa"
+        android:inputType="textPersonName"
+        android:textColor="@color/hitam"
+        android:textColorHint="@color/hijau_utama" />
 
     <EditText
         android:id="@+id/phone"

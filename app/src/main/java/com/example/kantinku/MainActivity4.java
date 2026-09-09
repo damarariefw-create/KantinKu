@@ -1,6 +1,8 @@
 package com.example.kantinku;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -39,6 +41,14 @@ public class MainActivity4 extends AppCompatActivity {
         ((TextView) findViewById(R.id.textView4)).setText("Harga Makanan: " + formatRupiah(hargaMakanan));
         ((TextView) findViewById(R.id.textView6)).setText("Harga Minuman: " + formatRupiah(hargaMinuman));
         ((TextView) findViewById(R.id.textView7)).setText("Total Harga: " + formatRupiah(hargaMakanan + hargaMinuman));
+
+        Button btnKembali = findViewById(R.id.btnLanjut2);
+        btnKembali.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity4.this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        });
     }
 
     // Format angka ke format rupiah ("15000" -> "Rp15.000")
